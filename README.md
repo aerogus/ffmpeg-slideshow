@@ -1,6 +1,6 @@
 # ffmpeg-slideshow
 
-Génération d'une vidéo de 10sec avec `ffmpeg` respectant le scénario suivant :
+Génération d'une vidéo de 10 secondes avec `ffmpeg` respectant le scénario suivant :
 
 ```
 00:00:00 -> 00:00:01 : Ø
@@ -21,17 +21,16 @@ Génération d'une vidéo de 10sec avec `ffmpeg` respectant le scénario suivant
 mpv output.mp4
 ```
 
-![Extrait de la vidéo générée](screenshot.jpg)
+![Prévisualisation de la vidéo générée](output.gif)
 
 ## Notes
 
-- Ne marche pas sous bash 3 de MacOS -> installer bash via homebrew pour avoir la v5
-- dans le scénario, la durée peut être en s ou ms
-- les fichiers doivent avoir le même format de couleurs (ex: rgba si png)
-- pas possible de mixer jpg + png
-- la dernière image est affichée jusqu'à la fin, pas besoin de specifier une "duration"
-- testé avec ffmpeg 7.0.2
-- pas réussi à générer transparent.png avec ffmpeg et lavfi
+- Ne marche pas sous bash v3 de MacOS -> installer via homebrew `brew install bash` pour avoir bash v5
+- dans le scénario, la durée peut être en `s` ou `ms`
+- les fichiers doivent avoir le même format de couleurs (ex: `rgba` si `png`)
+- pas possible de mixer `jpg` + `png`
+- la dernière image est affichée jusqu'à la fin, pas besoin de specifier une `duration`
+- testé avec `ffmpeg 7.0.2`
 
 ## Ressources
 
