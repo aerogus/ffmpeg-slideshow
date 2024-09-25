@@ -1,0 +1,15 @@
+file 'transparent.png'
+duration 1.0s
+file 'red.png'
+duration 2.0s
+file 'transparent.png'
+duration 1.0s
+file 'white.png'
+duration 1.0s
+file 'transparent.png'
+duration 1.0s
+file 'pink.png'
+duration 1.0s
+file 'transparent.png'
+duration 1.0s
+file 'blue.png'
