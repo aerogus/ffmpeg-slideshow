@@ -13,24 +13,41 @@ Génération d'une vidéo de 10 secondes avec `ffmpeg` respectant le scénario s
 00:00:08 -> fin      : blue
 ```
 
-## Résultat
+## Exécution
 
 ```bash
-./mk-imgs.sh
-./mk-video.sh
-mpv output.mp4
+./run.sh
+- Génération pink.png : 0xFF00CC@1.0
+- Génération blue.png : 0x0000FF@1.0
+- Génération transparent.png : 0x000000@0.0
+- Génération black.png : 0x000000@1.0
+- Génération red.png : 0xFF0000@1.0
+- Génération white.png : 0xFFFFFF@1.0
+- Génération green.png : 0x00FF00@1.0
+- Génération output.mp4
+- Ménage pink.png
+- Ménage blue.png
+- Ménage transparent.png
+- Ménage black.png
+- Ménage red.png
+- Ménage white.png
+- Ménage green.png
 ```
+
+## Résultat
+
+Conversion de .mp4 en .gif pour prévisualisation :
 
 ![Prévisualisation de la vidéo générée](output.gif)
 
 ## Notes
 
-- Ne marche pas sous bash v3 de MacOS -> installer via homebrew `brew install bash` pour avoir bash v5
+- Ne marche pas sous bash v3 de MacOS -> installer la v5 via homebrew : `brew install bash`. Testé sous bash 5.2
 - dans le scénario, la durée peut être en `s` ou `ms`
 - les fichiers doivent avoir le même format de couleurs (ex: `rgba` si `png`)
 - pas possible de mixer `jpg` + `png`
 - la dernière image est affichée jusqu'à la fin, pas besoin de specifier une `duration`
-- testé avec `ffmpeg 7.0.2`
+- testé avec `ffmpeg 7.1.1`
 
 ## Ressources
 
